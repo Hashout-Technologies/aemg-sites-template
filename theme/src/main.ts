@@ -9,7 +9,9 @@ it.
 
 // Stylesheets
 import "./main.css";
+import "./main.less";
 
 // Javascript or Typescript
 import "./**/*.js";
 import "./**/*.ts";
+import "./components/*/*.js";
