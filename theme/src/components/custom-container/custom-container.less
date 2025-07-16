@@ -1,0 +1,439 @@
+body.hitech-guides-topic-page {	
+	.custom-container {
+	  padding: 0.75rem 1rem;
+
+	  .gu-custom-container {
+		display: flex;
+		margin-bottom: 4rem;
+
+		.col-3grid {
+		  .outer-container {
+			display: none;
+		  }
+		}
+
+		.col-6grid {
+		  -webkit-box-flex: 0;
+		  -webkit-flex: 0 0 50%;
+		  -ms-flex: 0 0 50%;
+		  flex: 0 0 50%;
+		  max-width: 50%;
+		}
+
+		.col-9grid {
+		  -webkit-box-flex: 0;
+		  -webkit-flex: 0 0 100%;
+		  -ms-flex: 0 0 100%;
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		  position: relative;
+
+		  .col-9grid-container {
+			margin-top: 3.125rem;
+		  }
+		}
+	  }
+	}
+}
+
+@media (min-width: 1024px) {
+	body.hitech-guides-topic-page {
+	  .custom-container {
+		padding: 0;
+
+		.gu-custom-container {
+		  display: flex;
+
+		  .col-3grid {
+			display: flex;
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 25%;
+			-ms-flex: 0 0 25%;
+			flex: 0 0 25%;
+			max-width: 25%;
+
+			.outer-container {
+			  display: flex;
+			  flex-direction: column;
+			  gap: 1.5rem;
+			  margin-top: 4.438rem;
+			  position: fixed;
+			  top: 70px;
+			  width: 25%;
+			  max-height: 100vh;
+			}
+		  }
+
+		  .col-9grid {
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 75%;
+			-ms-flex: 0 0 75%;
+			flex: 0 0 75%;
+			max-width: 75%;
+			position: relative;
+
+			.col-9grid-container {
+			  display: flex;
+			  margin-top: 4.438rem;
+
+			  .col-9grid-components {
+				width: 91%;
+			  }
+
+			  .gu-toolbar_wrapper.toolbar-hitech {
+				flex-grow: 1;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+}
+
+/* fsi template specific styles */
+body.fsi-guides-topic-page {
+	.custom-container {
+	  padding: 0;
+
+	  .gu-custom-container {
+		margin-top: 3.125rem;
+		.fsi-container {
+		  background: var(--pre-next-bg);
+		  border-top: 1px solid var(--light-grey-border);
+		  padding: 1.25rem 1rem;
+		}
+		.col-6grid {
+		  -webkit-box-flex: 0;
+		  -webkit-flex: 0 0 50%;
+		  -ms-flex: 0 0 50%;
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+	  }
+	}
+}
+@media (min-width: 1024px) {
+	body.fsi-guides-topic-page {
+	  .custom-container {
+		padding: 0;
+		.gu-custom-container {
+		  margin-top: 4.375rem;
+		  display: flex;
+		  border-top: 1px solid var(--light-grey-border);
+		  .col-3grid {
+			padding: 1.25rem 0;
+			display: flex;
+			-webkit-box-flex: 0;
+			max-width: 25%;
+			flex: 0 0 25%;
+			.outer-container {
+			  width: 100%;
+			  overflow: visible;
+			}
+		  }
+		  .col-6grid {
+			border: 1px solid var(--light-grey-border);
+			border-top: none;
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 50%;
+			-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+			max-width: 50%;
+			.home-banner {
+			  border-radius: 0;
+			  box-shadow: none;
+			  border: none;
+			}
+			&.collapsed {
+			  max-width: 70%;
+			  flex: 0 0 69.9%;
+			}
+		  }
+		  .col-3grid {
+			display: flex;
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 23%;
+			-ms-flex: 0 0 23%;
+			flex: 0 0 23%;
+			max-width: 23%;
+			margin: 0 1rem;
+			min-height: 40rem;
+			height: auto;
+			max-height: calc(100vh - 5rem);
+			overflow: auto;
+			scrollbar-width: thin;
+
+			&--right {
+			  position: sticky;
+			  top: 10%;
+			  margin: 0 1rem;
+			  padding: 0.5rem 1.25rem;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  min-height: 40rem;
+			  height: fit-content;
+			  max-height: calc(100vh - 20rem);
+			  overflow: auto;
+			  box-shadow: 0 0 1.5rem 0.25rem var(--dark-shadow);
+			  background-color: var(--pre-next-bg);
+			  border-radius: 0.75rem;
+
+			  .tableofcontents {
+				display: block;
+			  }
+
+			  &.collapsed {
+				width: fit-content !important;
+				box-shadow: none;
+				border-radius: 0;
+				margin: 0;
+				background-color: transparent;
+				height: auto;
+				flex: 0 0 fit-content !important;
+
+				> div:not(.tableofcontents) {
+				  display: none;
+				}
+
+				.tableofcontents {
+				  display: flex;
+				  justify-content: flex-end;
+				}
+
+				.gu-toc__title {
+				  display: none;
+				}
+
+				.gu-toc__col-icon {
+				  transform: rotate(180deg);
+				}
+
+				.cmp-toc__content {
+				  display: none;
+				}
+			  }
+			}
+		  }
+		  .fsi-container {
+			background: var(--pre-next-bg);
+			border-top: 1px solid var(--light-grey-border);
+			padding: 1.5rem 1rem;
+
+			.aem-Grid {
+			  display: flex;
+			}
+		  }
+		}
+	  }
+	}
+}
+
+/* manufacturing template specific styles */
+body.manufacturing-guides-topic-page {
+	.custom-container {
+	  padding: 0;
+
+	  .gu-custom-container {
+		margin-top: 3.125rem;
+
+		.fsi-container {
+		  background: var(--pre-next-bg);
+		  border-top: 1px solid var(--light-grey-border);
+		  padding: 1.25rem 1rem;
+		}
+
+		.col-6grid {
+		  flex: 0 0 100%;
+		  max-width: 100%;
+		}
+
+		// Desktop styles
+		@media (min-width: 1024px) {
+		  margin-top: 4.375rem;
+		  display: flex;
+
+		  // 3-column grid styles
+		  .col-3grid {
+			display: flex;
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 23%;
+			-ms-flex: 0 0 23%;
+			flex: 0 0 23%;
+			max-width: 23%;
+			min-height: 40rem;
+			height: auto;
+			max-height: calc(100vh - 5rem);
+			overflow: auto;
+
+			.outer-container {
+			  width: 100%;
+			}
+
+			&--left {
+			  position: sticky;
+			  top: 10%;
+			  padding: 1.25rem 0;
+			  box-shadow: 0 0 1.5rem 0.25rem var(--dark-shadow);
+			  background-color: var(--pre-next-bg);
+			  border-radius: 0.75rem;
+			  margin: 0 1rem;
+			  min-height: 40rem;
+			  height: fit-content;
+			  max-height: calc(100vh - 20rem);
+			  overflow: auto;
+			  &::-webkit-scrollbar {
+				width: 6px;
+			  }
+			 
+			  &::-webkit-scrollbar-track {
+				background: var(--nav-bg);
+				border-radius: 0.39rem;
+			  }
+			 
+			  &::-webkit-scrollbar-thumb {
+				background: var(--border-common);
+				border-radius: 0.39rem;
+			  }
+			 
+			  &::-webkit-scrollbar-thumb:hover {
+				background: var(--light-grey-border);
+			  }
+			}
+
+			&--right {
+			  position: sticky;
+			  top: 10%;
+			  margin: 0 1rem;
+			  padding: 0.5rem 1.25rem;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  min-height: 40rem;
+			  height: fit-content;
+			  max-height: calc(100vh - 20rem);
+			  overflow: auto;
+			  box-shadow: 0 0 1.5rem 0.25rem var(--dark-shadow);
+			  background-color: var(--pre-next-bg);
+			  border-radius: 0.75rem;
+
+			  .tableofcontents {
+				display: block;
+			  }
+
+			  &.collapsed {
+				width: fit-content !important;
+				box-shadow: none;
+				border-radius: 0;
+				margin: 0;
+				background-color: transparent;
+				height: auto;
+				flex: 0 0 fit-content !important;
+
+				> div:not(.tableofcontents) {
+				  display: none;
+				}
+
+				.tableofcontents {
+				  display: flex;
+				  justify-content: flex-end;
+				}
+
+				.gu-toc__title {
+				  display: none;
+				}
+
+				.gu-toc__col-icon {
+				  transform: rotate(180deg);
+				}
+
+				.cmp-toc__content {
+				  display: none;
+				}
+			  }
+			}
+		  }
+
+		  // 6-column grid styles
+		  .col-6grid {
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 50%;
+			-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+			width: auto;
+			max-width: 50%;
+			.home-banner {
+			  border-radius: 0;
+			  box-shadow: none;
+			  border: none;
+			}
+
+			  &.collapsed {
+			  max-width: 70%;
+			  flex: 1 1 69.9%;
+			}
+		  }
+
+		  // Left-collapsed state
+		  &.left-collapsed {
+			.col-3grid {
+			  flex: 0 0 23%;
+			  &--left {
+				flex: 0 0 fit-content;
+				box-shadow: none;
+				border-radius: 0;
+				margin: 0;
+				background-color: transparent;
+				height: auto;
+			  }
+			}
+			.col-9grid {
+			  flex: 0 0 95%;
+			  max-width: 95%;
+
+			  .col-9grid-container {
+				gap: 0;
+			  }
+
+			  .col-9grid-components {
+				width: 92.9%;
+			  }
+
+			  .gu-toolbar_wrapper.toolbar-hitech {
+				flex-grow: 1;
+			  }
+			}
+
+			.col-6grid {
+			  flex: 1 1 70.9%;
+			  max-width: 71%;
+
+			  &.collapsed {
+				flex: 1 1 89.9%;
+				max-width: 92%;
+			  }
+			}
+
+			.cmp-navigation,
+			.cmp-navigation-filter-container {
+			  display: none;
+			}
+
+			.cmp-navigation__col-icon {
+			  margin-top: 0.5rem;
+			  transform: rotate(0deg);
+			}
+		  }
+
+		  // FSI container styles
+		  .fsi-container {
+			background: var(--pre-next-bg);
+			border-top: 1px solid var(--light-grey-border);
+			padding: 1.5rem 1rem;
+
+			.aem-Grid {
+			  display: flex;
+			}
+		  }
+		}
+	  }
+	}
+}

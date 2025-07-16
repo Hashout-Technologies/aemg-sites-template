@@ -1,0 +1,47 @@
+body.fsi-guides-topic-page {
+	.home-banner {
+	  box-shadow: none;
+	  border: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	body.fsi-guides-topic-page {
+	  #section-topic {
+		padding: 1.25rem 1rem;
+	  }
+	}
+}
+
+/* manufacturing template specific styles */
+body.manufacturing-guides-topic-page {
+	.home-banner {
+	  box-shadow: none;
+	  // border: none;
+	  margin: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	body.manufacturing-guides-topic-page {
+	  #section-topic {
+		padding: 0.8rem;
+		border-radius: 0.75rem;
+		box-shadow: 0 0 1.5rem 0.25rem var(--dark-shadow);
+		min-height: 40rem;
+		height: fit-content;
+	  }
+	  .home-banner {
+		margin: 0;
+	  }
+	}
+	html#adobeguides-dark-contrast {
+		body.manufacturing-guides-topic-page {
+			#section-topic {
+			  border: 1px solid var(--grey-border);
+			}
+		}
+	}
+}
+
+

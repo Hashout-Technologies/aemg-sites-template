@@ -1,0 +1,205 @@
+body.hitech-guides-topic-page {
+	.header {
+	  .gu-header {
+		&_toolbarheader {
+		  .toolbar-header {
+			display: flex;
+			justify-content: space-between;
+			gap: 1.25rem;
+			position: absolute;
+			right: 18%;
+			top: 29%;
+		  }
+
+		  .gu-search__toggle {
+			background: transparent;
+			border: none;
+		  }
+
+		  .gu-accessibility_wrapper .gu-accessibility_icon-container {
+			padding: 0;
+		  }
+
+		  .gu-accessibility_wrapper .gu-accessibility_icon-container:hover {
+			background-color: transparent;
+			border-radius: 50%;
+		  }
+
+		  .show {
+			display: block;
+			z-index: var(--z-index-11);
+		  }
+		}
+		&_search-container {
+		  .cmp_search__info {
+			display: none;
+		  }
+		}
+	  }
+	}
+}
+
+@media (min-width: 600px) {
+	body.hitech-guides-topic-page {
+	  .header .gu-header {
+		&_toolbarheader {
+		  .toolbar-header {
+			right: 10%;
+		  }
+		}
+	  }
+	}
+}
+
+@media (min-width: 1024px) {
+	body.hitech-guides-topic-page {
+	  .header {
+		.gu-header {
+		  &__humberger,
+		  &_toolbarheader {
+			display: none;
+		  }
+		}
+	  }
+	}
+}
+
+
+/*fsi template specific styles*/
+body.fsi-guides-topic-page {
+	.header {
+	  .gu-header {
+		&_wrapper {
+		  position: unset;
+		}
+		.header .gu-header__humberger .res-menu {
+		  z-index: 99;
+		}
+		&_toolbarheader {
+		  .below-title {
+			position: absolute;
+			right: 16%;
+			top: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1.25rem;
+			.gu-search__toggle {
+			  border: none;
+			  background: none;
+			  cursor: pointer;
+			  width: auto;
+			  height: auto;
+			  padding: 0;
+			}
+			.gu-theme__icon-container {
+			  width: auto;
+			  height: auto;
+			  padding: 0;
+			  &:hover {
+				background-color: transparent;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+}
+@media (min-width: 500px) {
+	body.fsi-guides-topic-page {
+	  .header .gu-header_toolbarheader .below-title {
+		right: 12%;
+	  }
+  }
+}
+@media (min-width: 600px) {
+	body.fsi-guides-topic-page {
+	  .header {
+		.gu-header_search-container {
+		  display: flex;
+		  align-items: center;
+		}
+		.gu-header_toolbarheader .below-title {
+		  right: 10%;
+		}
+	  }
+	}
+}
+
+@media (min-width: 767px) {
+	body.fsi-guides-topic-page {
+	  .header .gu-header_toolbarheader .below-title {
+		right: 8%;
+	  }
+	}
+}
+
+/* manufacturing template specific styles */
+body.manufacturing-guides-topic-page {
+	.header {
+	  .gu-header {
+		&_wrapper {
+		  position: relative;
+		}
+		.header .gu-header__humberger .res-menu {
+		  z-index: 99;
+		}
+		&_toolbarheader {
+		  .below-title {
+			position: absolute;
+			right: 13%;
+			top: 14%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1.25rem;
+			.gu-search__toggle {
+			  border: none;
+			  background: none;
+			  cursor: pointer;
+			  width: auto;
+			  height: auto;
+			  padding: 0;
+			}
+			.gu-theme__icon-container {
+			  width: auto;
+			  height: auto;
+			  padding: 0;
+			  &:hover {
+				background-color: transparent;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+}
+@media (max-width: 360px) {
+	body.manufacturing-guides-topic-page {
+	  .header .gu-header_toolbarheader .below-title {
+		right: 14%;
+	  }
+	}
+}
+
+@media (min-width: 600px) {
+	body.manufacturing-guides-topic-page {
+	  .header {
+		.gu-header_search-container {
+		  display: flex;
+		  align-items: center;
+		}
+		.gu-header_toolbarheader .below-title {
+		  right: 6%;
+		}
+	  }
+  }
+}
+
+@media (min-width: 767px) {
+	body.manufacturing-guides-topic-page {
+	  .header .gu-header_toolbarheader .below-title {
+		right: 5%;
+	  }
+	}
+}

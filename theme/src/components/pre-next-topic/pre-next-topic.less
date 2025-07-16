@@ -1,0 +1,290 @@
+body.hitech-guides-topic-page {
+	.pre-next-component {
+	  .gu-pre-next {
+		&-wrapper {
+		  display: flex;
+		  width: 100%;
+		  gap: 0;
+		  border: 1px solid var(--border-common);
+		  border-radius: 0.5rem;
+		  background-color: var(--common-bg);
+		  padding: 0.75rem 0.25rem;
+		  margin-top: 2rem;
+		}
+
+		&-topic_text {
+		  font-size: var(--pre-next-fs);
+		  font-weight: 600;
+		  line-height: var(--pre-next-lh);
+		  color: var(--secondary-light);
+		  margin-bottom: 0;
+		}
+
+		&-topic_link {
+		  display: none;
+		}
+	  }
+
+	  .gu-pre-topic_container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		border-radius: 0;
+		border: none;
+		background: transparent;
+		padding: 0;
+
+		&-wrapper {
+		  width: 50%;
+		}
+
+		&-img {
+		  margin-right: 0.5rem;
+		  display: flex;
+		  align-items: center;
+		}
+	  }
+
+	  .gu-next-topic_container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		border-radius: 0;
+		border: none;
+		background: transparent;
+		padding: 0;
+		text-align: right;
+
+		&-wrapper {
+		  width: 50%;
+		}
+
+		&-img {
+		  margin-left: 0.25rem;
+		  display: flex;
+		  align-items: center;
+		}
+	  }
+
+	  .gu-pre-topic_container:empty,
+	  .gu-next-topic_container:empty {
+		visibility: hidden;
+	  }
+	}
+}
+
+@media (min-width: 1024px) {
+	body.hitech-guides-topic-page {
+	  .pre-next-component {
+		.gu-pre-next {
+		  &-wrapper {
+			width: 100%;
+			gap: 0.625rem;
+			border-radius: 0;
+			border: none;
+			background: transparent;
+			padding: 0;
+			margin-top: 2.5rem;
+		  }
+
+		  &-topic_text {
+			font-size: var(--body-font-size);
+			font-weight: 500;
+			color: var(--secondary-light);
+			line-height: var(--body-font-line-height);
+			margin-bottom: 0.5rem;
+		  }
+
+		  &-topic_link {
+			display: block;
+			font-size: var(--body-1-fs);
+			font-weight: 600;
+			line-height: var(--body-1-lh);
+			text-decoration: none;
+			color: var(--primary-color);
+		  }
+		}
+
+		.gu-pre-topic_container {
+		  background-color: var(--common-bg);
+		  padding: 0.75rem 0.25rem;
+		  border: 1px solid var(--border-common);
+		  border-radius: 0.5rem;
+
+		  &-img {
+			margin-right: 0.5rem;
+		  }
+		}
+
+		.gu-next-topic_container {
+		  background-color: var(--common-bg);
+		  padding: 0.75rem 0.25rem;
+		  text-align: right;
+		  border: 1px solid var(--border-common);
+		  border-radius: 0.5rem;
+
+		  &-img {
+			margin-left: 0.5rem;
+		  }
+		}
+	  }
+  }
+}
+
+
+/*fsi template specific styles*/
+body.fsi-guides-topic-page {
+	.pre-next-component {
+	  .gu-pre-topic_container {
+		margin-bottom: 0.75rem;
+	  }
+	  .gu-pre-next-topic_arrow-container {
+		display: none;
+	  }
+	  .gu-pre-next-topic_text-container {
+		display: flex;
+	  }
+	  .gu-pre-next-topic_text {
+		font-size: var(--body-1-fs);
+		line-height: var(--body-1-lh);
+		font-weight: 400;
+		color: var(--secondary-color);
+		margin-bottom: 0;
+	  }
+	  .gu-pre-next-topic_text::after {
+		content: ":";
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	  }
+	  .gu-pre-next-topic_link {
+		font-size: var(--body-1-fs);
+		line-height: var(--body-1-lh);
+		font-weight: 600;
+		color: var(--primary-color);
+		text-decoration: none;
+		margin-left: 0.25rem;
+	  }
+	}
+}
+
+/* manufacturing template specfic styles */
+body.manufacturing-guides-topic-page {
+	.pre-next-component {
+	  .gu-pre-next-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin: 0.75rem 0;
+	  }
+
+	  .gu-pre-topic_container,
+	  .gu-next-topic_container {
+		display: flex;
+		align-items: center;
+		width: 22.75rem;
+		border: 1px solid var(--grey-border);
+		border-radius: 0.75rem;
+		padding: 1rem 0.5rem;
+		gap: 0.5rem;
+		background: var(--pre-next-bg);
+	  }
+
+	  .gu-pre-topic_container {
+		justify-content: start;
+	  }
+
+	  .gu-next-topic_container {
+		justify-content: end;
+		text-align: right;
+	  }
+
+	  .gu-pre-next-topic_text-container {
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  .gu-pre-next-topic_text {
+		font-size: var(--body-1-fs);
+		line-height: var(--body-1-lh);
+		font-weight: var(--fw-h5);
+		color: var(--secondary-light);
+		margin-bottom: 0;
+	  }
+
+	  .gu-pre-next-topic_link {
+		font-size: var(--body-1-fs);
+		line-height: var(--body-1-lh);
+		font-weight: var(--fw-h4);
+		color: var(--primary-color);
+		text-decoration: none;
+	  }
+
+	  img[src="/content/dam/guides/common-images/icons/next.svg"],
+	  img[src="/content/dam/guides/common-images/icons/previous.svg"] {
+		filter: invert(80%) sepia(75%) saturate(1000%) hue-rotate(360deg)
+		  brightness(105%) contrast(105%);
+	  }
+
+	  @media (max-width: 1024px) {
+		// .gu-pre-next-wrapper {
+		//   flex-direction: column;
+		//   align-items: center;
+		//   margin: 1rem 0;
+		//   gap: 0.5rem;
+		// }
+		.gu-pre-topic_container,
+		.gu-next-topic_container {
+		  width: auto;
+		  padding: 0.75rem;
+		}
+		.gu-pre-next-topic_text {
+		  font-size: var(--body-2-fs);
+		  line-height: var(--body-2-lh);
+		}
+		.gu-pre-next-topic_link {
+		  font-size: var(--body-2-fs);
+		  line-height: var(--body-2-lh);
+		}
+	  }
+
+	  @media (max-width: 768px) {
+		.gu-pre-next-wrapper {
+		  display: flex;
+		  flex-direction: row;
+		  justify-content: space-between;
+		  margin: 0.75rem 1rem;
+		  border-radius: 0.75rem;
+		  border: 1px solid var(--grey-border);
+		  background-color: var(--pre-next-bg);
+		  padding: 1rem 0.5rem;
+		}
+		.gu-pre-topic_container,
+		.gu-next-topic_container {
+		  display: flex;
+		  align-items: center;
+		  width: auto;
+		  border: none;
+		  padding: 0;
+		  gap: 0;
+		}
+		.gu-pre-next-topic_link {
+		  display: none;
+		}
+		.gu-pre-next-topic_text {
+		  color: var(--primary-color);
+		  font-weight: var(--fw-h4);
+		  font-size: var(--body-1-fs);
+		  margin-top: -0.3rem;
+		}
+	  }	
+	}
+}
+
+html#adobeguides-dark-contrast {
+	body.manufacturing-guides-topic-page {
+	  .pre-next-component {
+		.gu-pre-next-topic_link {
+		  color: var(--yellow-color);
+		}
+	  }
+	}
+}

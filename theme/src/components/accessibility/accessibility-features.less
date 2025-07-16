@@ -1,0 +1,201 @@
+html.adobeguides-text-size {
+	body.hitech-guides-topic-page {
+	  .custom-container .gu-custom-container .col-3grid .outer-container {
+		margin-top: 5.313rem;
+	  }
+  }
+}
+
+html#adobeguides-dark-contrast {
+	body.hitech-guides-topic-page {
+	  .toolbar-hitech .desktop {
+		z-index: var(--z-index-10);
+	  }
+	}
+}
+
+html.adobeguides-text-spacing {
+  
+  @media (max-width: 1023px) {
+	body.hitech-guides-topic-page {
+		.social-share-container .social-links {
+		  width: max-content;
+		}
+	}
+  }
+}
+
+/* fsi template specific styles */
+
+html.adobeguides-text-size {
+  .fsi-guides-topic-page {
+	  .breadcrumb2 {
+		padding: 0.75rem !important;
+	  }
+	  .cmp-languagenavigation__item a {
+		font-size: 14px !important;
+	  }
+	  .custom-container .gu-custom-container .col-3grid--right.collapsed {
+		border: none !important;
+	  }
+  }
+  @media (min-width: 767px) {
+	body.fsi-guides-topic-page {
+		.header .gu-header_toolbarheader .below-title .gu-theme__icon-container {
+		  display: inline;
+		}
+	}
+  }
+}
+
+html#adobeguides-dark-contrast {
+	body.fsi-guides-topic-page {
+	  .lat-section {
+		border: 1px solid white;
+		margin: 0.625rem;
+		width: 94%;
+		.cmp-languagenavigation__group li,
+		.cmp-languagenavigation__group,
+		.cmp-languagenavigation {
+		  border-color: transparent !important;
+		  border: none;
+		  background-color: transparent !important;
+		}
+	  }
+	  .footer {
+		.gu-footer_social-icon {
+		  filter: invert(80%) brightness(95%) contrast(90%);
+		}
+	  }
+	}
+}
+html.adobeguides-light-contrast {
+	body.fsi-guides-topic-page {
+	  .lat-section {
+		.cmp-languagenavigation__group li,
+		.cmp-languagenavigation__group,
+		.cmp-languagenavigation {
+		  border-color: transparent !important;
+		  border: none;
+		}
+	  }
+  }
+}
+html.adobeguides-text-spacing {
+	body.fsi-guides-topic-page {
+	  .custom-container .gu-custom-container .col-3grid--right.collapsed {
+		border: none !important;
+	  }
+	  .lat-section
+		.gu-accessibility-toolbar
+		.gu-accessibility__title-container
+		span {
+		letter-spacing: normal !important;
+	  }
+	  .lat-section
+		.gu-language-navigation-toolbar
+		.gu-language-navigation__title-container
+		span {
+		letter-spacing: normal !important;
+	  }
+	  .gu-accessibility_menu.show a,
+	  .cmp-languagenavigation__group li,
+	  .cmp-languagenavigation__group,
+	  .cmp-languagenavigation {
+		letter-spacing: normal !important;
+	  }
+	}
+}
+
+/* manufacturing template specific styles */
+
+html.adobeguides-text-size {
+	.manufacturing-guides-topic-page {
+	  .breadcrumb2 {
+		padding: 0.75rem !important;
+	  }
+	  .cmp-languagenavigation__item a {
+		font-size: var(--body-1-fs) !important;
+	  }
+	  @media (min-width: 767px) {
+		.header .gu-header_toolbarheader .below-title .gu-theme__icon-container {
+		  display: inline;
+		}
+		.toolbar.below-title.mobile img {
+		  filter: invert(80%) sepia(75%) saturate(1000%) hue-rotate(360deg)
+			brightness(105%) contrast(105%);
+		}
+	  }
+	}
+}
+
+html#adobeguides-dark-contrast {
+	body.manufacturing-guides-topic-page {
+	  .base-topic-page-section {
+		div.topic {
+		  .version-selector {
+			.dropdown {
+			  background-color: transparent !important;
+			  border-color: var(--white-color) !important;
+			}
+		  }
+		}
+	  }
+	  .lat-section {
+		border: 1px solid var(--white-color);
+		margin: 0.625rem;
+		width: 94%;
+		.cmp-languagenavigation__group li,
+		.cmp-languagenavigation__group,
+		.cmp-languagenavigation {
+		  border-color: transparent !important;
+		  border: none;
+		  background-color: transparent !important;
+		}
+	  }
+	}
+}
+html.adobeguides-light-contrast {
+	body.manufacturing-guides-topic-page {
+	  .base-topic-page-section {
+		div.topic {
+		  .version-selector {
+			.dropdown {
+			  background-color: transparent !important;
+			  border-color: var(--bluish-color) !important;
+			}
+		  }
+		}
+	  }
+	  .lat-section {
+		.cmp-languagenavigation__group li,
+		.cmp-languagenavigation__group,
+		.cmp-languagenavigation {
+		  border-color: transparent !important;
+		  border: none;
+		}
+	  }
+	}
+}
+html.adobeguides-text-spacing {
+	body.manufacturing-guides-topic-page {
+	  .lat-section
+		.gu-accessibility-toolbar
+		.gu-accessibility__title-container
+		span {
+		letter-spacing: normal !important;
+	  }
+	  .lat-section
+		.gu-language-navigation-toolbar
+		.gu-language-navigation__title-container
+		span {
+		letter-spacing: normal !important;
+	  }
+	  .gu-accessibility_menu.show a,
+	  .cmp-languagenavigation__group li,
+	  .cmp-languagenavigation__group,
+	  .cmp-languagenavigation {
+		letter-spacing: normal !important;
+	  }
+	}
+}
